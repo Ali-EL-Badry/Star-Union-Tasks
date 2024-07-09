@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family:"Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #0085e45c;
+}
+::-webkit-scrollbar-thumb {
+    background: #0085e4; 
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0085e4; 
+}
+hr{
+    width: 86%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #0085e4;
+    border: none;
+}
+
+nav{
+    background-color: rgb(255, 255, 255, 0.7) ;
+    width: 86%;
+    padding: 0px 7%;
+    margin: 0;
+    height: 50px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    border-bottom: 3px solid #0085e4;
+}
+nav .logo {
+    font-size: 30px;
+    color: #0085e4;
+    padding: 5px 0;
+    animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+    0%, 100% { 
+        transform:scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+nav .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .content >a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+nav .content > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #0085e4;
+    transition: width 0.3s ease-in-out;
+}
+nav .content > a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+nav .content > a:hover {
+    color: #0085e4;
+}
+
+nav .search{
+    display: flex;
+    align-items: center;
+}
+nav .search > a{
+    background-color: #0085e4;
+    margin: 10px;
+    padding: 5px;
+    border: 0px solid #0085e4;
+    border-radius: 10px;
+}
+
+
+nav .search .register{
+    background-color: #0085e4;
+    margin: 10px;
+    padding: 10px;
+    border: 0px solid #0085e4;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+
+nav .search .register >a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+nav .search .register:hover{
+    color: #0085e4;
+    background-color: white;
+}
+
+nav .search .register:hover >a{
+    color: #0085e4;
+}
+
+.home {
+    background-image: url(../imgs/isometric-e-learning-background-template.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: white; 
+    width: 86%;
+    height: 100vh;
+    padding: 0 7%;
+}
+.home .content{
+    padding-top: 7%;
+    width: 45%;
+    font-size: 70px;
+    font-weight: 800;
+}
+.home .sum{
+    width: 45%;
+    font-weight: 500;
+}
+
+.home .start{
+    margin-top: 30px;
+}
+.home .start >a{
+    background-color: white;  
+    color: #0085e4;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: 0.3s linear;
+    margin-right: 20px;
+}
+
+.home .start >a:hover{
+    background-color:#0085e4;
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    color: white;
+}
+.num{
+    text-align: center;
+    margin: 30px;
+    font-weight: 600;
+}
+
+.company{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+.company .comp{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.company .comp >img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.company .comp .company-name{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.courses{
+    padding: 7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.courses .topic{
+    width: 43%;
+    margin-right: 85px;
+}
+
+.courses .topic .one{
+    color:gray;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.courses .topic .category{
+    color: #0085e4;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.courses .topic .details{
+    font-weight: 500;
+}
+
+.courses .topic .more{
+    color: white;
+    padding-top: 10px;
+    border-color: 10px solid #0085e4;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.courses .topic .more >a{
+    font-size: 20px;
+    background-color: #0085e4;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: #0085e4 2px solid;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+
+.courses .topic .more >a:hover{
+    background-color: white;
+    filter: drop-shadow(0px 0px 10px #0089e4);
+    color: #0085e4;
+}
+
+.courses .course {
+    position: relative;
+    background-color: whitesmoke;
+    width: 20%;
+    padding: 20px;
+    border: #0085e4 2px solid;
+    margin: 0 20px 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.courses .course > a {
+    text-decoration: none;
+}
+
+.courses .course > a > img {
+    width: 100%;
+    border-radius: 10px;
+    height: 170px;
+}
+
+.courses .course > a .title {
+    color: #0085e4;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.courses .course >a .course-details {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 10;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s ease-in;
+    transform: translateY(100%);
+}
+
+.courses .course:hover {
+    filter: drop-shadow(0px 0px 10px #0089e4);
+}
+
+.courses .course:hover .course-details {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+.courses .course >a .course-details .name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.courses .course >a .course-details .details{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.courses .course >a .course-details .parti{
+    margin-top: 10px;
+}
+
+.courses .course >a .course-details .parti > p{
+    margin: 0;
+}
+
+.blogs{
+    padding:7%;
+    display: flex;
+    flex-direction: row;
+}
+.blogs > img{
+    width: 50%;
+    border-radius: 10px;
+}
+.blogs .topic{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.blogs .topic .about{
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.blogs .topic .main{
+    color: #0085e4;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.blogs .topic .exe{
+    font-weight: 500;
+}
+
+.blogs .topic .char{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blogs .topic .char .inside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.blogs .topic .char .inside >img{
+    width: 35px;
+    height: 35px; 
+    border-radius: 10px;
+}
+
+.blogs .topic .char .inside .fi{
+    font-size: 20px;
+    font-weight: 600;
+}
+.blogs .topic >a{
+    margin: 20px;
+    text-decoration: none;
+    background-color: #0085e4;
+    border: #0085e4 3px solid;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.3s linear;
+}
+.blogs .topic >a:hover{
+    background-color: white;
+    filter: drop-shadow(0px 0px 10px #0089e4);
+    color: #0085e4;
+}
