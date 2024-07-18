@@ -1,0 +1,326 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4747475c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e88b06;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e88b06;
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.first {
+    position: relative;
+    width: 100%;
+    height: 92.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.first::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slide 10s infinite;
+}
+
+.slide-content {
+    padding: 65px;
+    position: absolute;
+    width: 100%;
+    height: 92.5vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    color: white;
+}
+
+@keyframes slide {
+    0% { background-image: url('../imgs/gray-sofa-white-living-room-interior-with-copy-space-3d-rendering.jpg'); }
+    33% { background-image: url('../imgs/interior-space-decorated-boho-style.jpg'); }
+    66% { background-image: url('../imgs/living-room-scandinavian-interior-design.jpg'); }
+    100% { background-image: url('../imgs/gray-sofa-white-living-room-interior-with-copy-space-3d-rendering.jpg'); }
+}
+
+.first .slide-content .wel {
+    font-size: 30px;
+    text-align: center;
+    color: #e88b06;
+    font-weight: 700;
+    margin: 0;
+}
+
+.first .slide-content .main {
+    font-size: 70px;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.first .slide-content .des {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff80;
+    margin-bottom: 10px;
+}
+
+.first .slide-content .btn {
+    margin: 30px auto;
+    padding: 15px 32px;
+}
+
+.first .slide-content .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first .slide-content .onfire {
+    border-left: #e88b06 5px solid;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+}
+
+.first .slide-content .onfire .mn {
+    color: #e88b06;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20%;
+}
+
+.second {
+    padding: 65px;
+    display: flex;
+    background-color: #f1f1f1;
+}
+
+.second{
+    margin: 0;
+    padding: 65px;
+}
+
+.adv{
+    margin-right: 110px;
+    margin-bottom: 20px;
+}
+
+.adv > p {
+    font-size: 30px;
+    font-weight: 1000;
+    padding-bottom: 10px;
+    border-bottom: #e88b06 solid 5px;
+    margin-bottom: 20px;
+}
+
+.adv .icon {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    border-bottom: gray 2px solid;
+    border-radius: 10px;
+}
+
+.adv .icon .text > p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: gray;
+}
+
+.adv .btn {
+    margin: 20px auto;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 800;
+    border-width: 5px;
+}
+.second .card{
+    margin: 0px 0;
+}
+.second .small .card-body{
+    padding: 20px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    border-radius: 10px;
+    transition:  0.3s ease-in-out;
+}
+
+.second .small .card-body:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 10px #e88b06);
+}
+
+.second .card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+
+.second .card-title{
+    text-align: center;
+}
+
+.second .big{
+    background-image: url(../imgs/wooden-table-product-background.jpg);
+    background-size: cover;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    transition:  0.3s ease-in-out;
+}
+.second .big2{
+    background-image: url(../imgs/room-house-decorated-with-brazilian-folklore-design.jpg);
+    background-size: cover;    
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    transition:  0.3s ease-in-out;
+}
+.second .big:hover, .second .big2:hover{
+    transform: scale(1.02);
+    filter: drop-shadow(0px 0px 10px #e88b06);
+}
+.second .content{
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: #e88b06 3px solid;
+    border-radius: 10px;
+    text-align: center;
+    object-fit: cover;
+}
+.second  .card-title{
+    text-align: center;
+    color: #e88b06;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.third{
+    background-color: #1f1f1f;
+    padding: 50px;
+    color: white;
+}
+.third .small{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #474747;
+    filter: drop-shadow(0px 0px 10px black);
+    transition: 0.3s ease-in-out;
+}
+
+.third .small:hover{
+    transform: scale(1.02);
+    filter: drop-shadow(0px 0px 10px #e88b06);
+}
+.pagination .page-link {
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #e88b06;
+    border-color: #e88b06;
+    color: white;
+}
+
+.pagination .page-link:hover {
+    background-color: #d3d3d3;
+    color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #ccc;
+    background-color: gray;
+    border-color: gray;
+}
+.footer {
+    background-color: #000;
+    color: #e88b06;
+    padding: 60px 0;
+}
+
+.footer .footer-title {
+    color: #e88b06;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #474747;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.footer p, .footer a {
+    color: #e88b06;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #474747;
+}
+
+.footer .social-icons a {
+    color: #e88b06;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.footer .social-icons a:hover {
+    color: #474747;
+}
+
+.footer .newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.footer .newsletter button {
+    background-color: #e88b06;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.footer .newsletter button:hover {
+    background-color: #474747;
+    color: #e88b06;
+}
+
+.footer .footer-bottom {
+    border-top: 1px solid #474747;
+    padding-top: 20px;
+    margin-top: 40px;
+    color: #474747;
+    text-align: center;
+}
