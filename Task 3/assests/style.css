@@ -1,0 +1,256 @@
+/* 
+==> Made by : Ali EL-Badry
+==> The official website of Ali EL-Badry
+========================================= */
+
+/* ===================== Main Body ===================== */
+body{
+    border-color: rgb(38, 38, 38);
+    border-width: 0 20px;
+    border-style:  solid;
+    margin: 0;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+main{
+    background-color: rgb(0, 0, 0);
+    padding: 0px 20px;
+}
+hr {
+    border: none;
+    border-top: 1px solid #3498db; 
+    margin: 20px 0; 
+}
+/* ===================== Navigation Bar ================= */
+header{
+    background-color: rgb(0, 0, 0);
+    height: 30px;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    margin-left: -40px;
+    width: calc(100% + 60px);
+    display: flex; 
+    border-bottom: 2px white solid;
+    font-family: 'Playfair Display', serif;
+}
+header .total{
+    padding-right: 70px ;
+} 
+
+header > p{
+    margin: 0px;
+    font-style: italic;
+    font-size: large;
+    flex: 1;
+    transition: color 1s ease-out;
+    padding-left: 80px ;
+}
+
+header > .total > a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    padding: 0px 20px;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+header .total> a:hover{
+    border: solid #eee;
+    border-radius: 6px;
+    background-color: #eee;
+    color: black;
+}
+/* ===================== Welcome ================= */
+.Welcome{
+    display: flex;
+    padding: 150px 200px;
+}
+.photo {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px 10px;
+    animation: slide-left 2s ease-in-out forwards;
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.content{
+    padding: 30px;
+}
+.content > a{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #3498db;
+    border: 3px solid #3498db;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.content > a:hover {
+    background-color: #3498db;
+    color: black;
+}
+.content > h1{
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0;
+    padding: 0px;
+    animation: fadeIn 3s ease-out forwards ;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================== Welcome ================= */
+.ab{
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.About-me{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 150px 150px 150px;
+
+}
+.photo2{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    animation: slide-right 3s ease-in-out forwards;
+    margin: 10px 10px;
+    flex: 1;
+}
+.photo2 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.About-me .content{
+    flex:1;
+    animation: slide-left 3s ease-in-out;
+}
+
+.About-me .content > h2{
+    color: #3498db;
+}
+@keyframes slide-right{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/* ===================== contact ================= */
+.Social {
+    padding: 50px;
+    text-align: center;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+.links {
+    border: 1px solid #3498db;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #2b2b2b;
+}
+
+.links h2 {
+    font-size: 50px !important;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.links p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.links a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.links img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.links a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+/* ===================== Projects ================= */
+
+.Projects{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: center;
+}
+.Projects .project > a {
+    width: 250px;
+    height: 400px;
+    margin: 30px;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.Projects .project > a:hover {
+    filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+    transform: scale(1.03);
+}
+
+.Projects .project > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
