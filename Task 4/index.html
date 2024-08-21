@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JS/index.js"></script>
-    <title>Document</title>
-</head> 
-    <body>
-    
-    </body>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/000000/todo-list.png">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="input">
+            <input type="text" id="input" placeholder="Add a new Task" required>
+            <button class="add" id='add'>Add</button>
+        </div>
+    </div>
+    <div class="list">
+    </div>
+    <div class="footer">
+        <p>Made with <box-icon type='solid' name='heart'></box-icon> by <a href="https://github.com/Ali-EL-Badry">Aly El-Badry</a></p>
+    </div>
+    <script src="JS/index.js" defer></script>
+</body>
 </html>
