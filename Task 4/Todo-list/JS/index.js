@@ -86,8 +86,7 @@ function saveTasks() {
 function loadTasks() {
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     const place = document.querySelector('.list');
-    place.innerHTML = ''; // Clear the list before reloading
-
+    place.innerHTML = '';
     tasks.forEach(task => {
         const taskHTML = `
             <div class="total ${task.done ? 'complete' : ''} ${task.expanded ? 'expanded' : ''}">
