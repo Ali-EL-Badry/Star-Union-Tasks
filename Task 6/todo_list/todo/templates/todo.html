@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Add Tasks || Todo list</title>
+</head>
+    <body>
+        <div class="all">
+            <div class="header">Hi, {{name}}</div>
+            <div class="email">Your email: {{email}} </div>
+            <form method="post">
+                {% csrf_token %}
+                <div class="in">
+                    <label for="username">Enter ur task:</label>
+                    <input type="text" name="task">
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </body>
+</html>

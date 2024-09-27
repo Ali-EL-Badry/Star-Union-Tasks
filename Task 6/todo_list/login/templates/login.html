@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Log in || TO-DO List</title>
+</head>
+    <body>
+        <div class="all">
+            <div class="header">To-Do List</div>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="in">
+                    <label for="username">Username:</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="in">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </body>
+</html>
